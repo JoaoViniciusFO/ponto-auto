@@ -61,7 +61,7 @@ public class Util {
         HttpEntity<String> httpEntity;
 
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.setAccept(new ArrayList<>() {{
+        headers.setAccept(new ArrayList<MediaType>() {{
             add(MediaType.APPLICATION_JSON);
         }});
         headers.setBearerAuth(tokenSemBearer);
